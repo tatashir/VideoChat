@@ -1,12 +1,12 @@
 <template>
   <div id="app">
     <div class="videoContainer">
-      <div>
-        Local
+      <div class="videoWrapper">
+        <p>Local</p>
         <video ref="localVideo" autoplay playsinline></video>
       </div>
-      <div>
-        Remote
+      <div class="videoWrapper">
+        <p>Remote</p>
         <video ref="remoteVideo" autoplay playsinline></video>
       </div>
     </div>
@@ -15,19 +15,19 @@
         <p><b>| offer側の操作</b></p>
         <button @click="createOffer">① Offerを生成</button>
         <button @click="setAnswer">④ Answerを登録</button>
-        <button @click="copyIceCandidate">⑤ ICE経路情報をコピー</button>
+        <!-- <button @click="copyIceCandidate">⑤ ICE経路情報をコピー</button> -->
       </div>
       <div class="buttonContainer">
         <p><b>| answer側の操作</b></p>
         <button @click="setOffer">② Offerを登録</button>
         <button @click="createAnswer">③ Answerを生成</button>
-        <button @click="setIceCandidate">⑥ ICE経路情報を登録</button>
+        <!-- <button @click="setIceCandidate">⑥ ICE経路情報を登録</button> -->
       </div>
     </div>
-    <div class="infoContainer">
+    <!-- <div class="infoContainer">
       <textarea v-model="input" placeholder="手動接続用の入力欄"></textarea>
       <textarea ref="textContainer"></textarea>
-    </div>
+    </div> -->
   </div>
 </template>
 
